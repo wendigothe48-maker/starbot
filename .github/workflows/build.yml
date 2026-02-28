@@ -18,3 +18,10 @@ jobs:
     - name: Build with Maven
       run: mvn clean package
       working-directory: ./plugin
+
+    # Ye step aapki .jar file ko save karega taaki aap download kar sako
+    - name: Upload JAR file
+      uses: actions/upload-artifact@v4
+      with:
+        name: GuildBot-Plugin
+        path: plugin/target/GuildBot-1.0-SNAPSHOT.jar
