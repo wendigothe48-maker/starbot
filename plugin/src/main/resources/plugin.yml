@@ -1,0 +1,11 @@
+name: GuildBot
+version: 1.0
+main: com.example.guildbot.GuildBotPlugin
+api-version: 1.21
+commands:
+  getmycode:
+    description: Get your verification code
+  invite:
+    description: Invite a player to your guild
+  join:
+    description: Join a guild
